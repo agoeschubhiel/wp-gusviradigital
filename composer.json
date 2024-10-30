@@ -1,0 +1,24 @@
+{
+    "name": "gusviradigital/gdp",
+    "description": "Custom WordPress theme for Gusviradigital",
+    "type": "wordpress-theme",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=7.4",
+        "composer/installers": "^2.0",
+        "predis/predis": "^2.2",
+        "phpfastcache/phpfastcache": "^9.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "GDP\\": "inc/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

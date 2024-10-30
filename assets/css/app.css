@@ -1,0 +1,76 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+  :root {
+    --gdp-color-primary: #2f5fdf;
+    --gdp-color-second: #f68d22;
+    --gdp-color-three: #91afff;
+    --gdp-color-white: #fff;
+    --gdp-family-font1: 'Rubik', sans-serif;
+    --gdp-family-font2: 'Nunito', sans-serif;
+  }
+  .bg-primary {
+    background-color: var(--gdp-color-primary);
+  }
+  .bg-second {
+    background-color: var(--gdp-color-second);
+  }
+  .bg-three {
+    background-color: var(--gdp-color-three);
+  }
+  .text-primary {
+    color: var(--gdp-color-primary);
+  }
+  .text-second {
+    color: var(--gdp-color-second);
+  }
+  .text-white {
+    color: var(--gdp-color-white);
+  }
+  .font-family1 {
+    font-family: var(--gdp-family-font1);
+  }
+  .font-family2 {
+    font-family: var(--gdp-family-font2);
+  }
+  .border-primary{
+    --tw-border-opacity: 1;
+    border-color:var(--gdp-color-primary);
+  }
+  .border-second{
+    --tw-border-opacity: 1;
+    border-color:var(--gdp-color-second);
+  }
+  .border-three{
+    --tw-border-opacity: 1;
+    border-color:var(--gdp-color-three);
+  }
+  body{
+    font-family: var(--gdp-family-font2);
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .section {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+  }
+  .row {
+      --bs-gutter-x: 2rem;
+      --bs-gutter-y: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: calc(var(--bs-gutter-y)* -1);
+      margin-right: calc(var(--bs-gutter-x) / -2);
+      margin-left: calc(var(--bs-gutter-x) / -2);
+  }
+
+}
